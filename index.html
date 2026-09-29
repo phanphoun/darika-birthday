@@ -33,11 +33,11 @@
     <div class="opening-inner">
       <p class="eyebrow opening-kicker">ថ្ងៃទី ២៩ ខែកញ្ញា ឆ្នាំ ២០២៦</p>
       <h1>សួស្តី <em>ដារីកា...</em></h1>
-      <p class="opening-line">បងបានរៀបចំអ្វីមួយសម្រាប់អូន។</p>
+      <p class="opening-line">បងមានអ្វីពិសេសមួយ ចង់ជូនអូន។</p>
       <button class="primary-button" id="openSurprise" type="button">
-        <span>បើកកាដូភ្ញាក់ផ្អើលរបស់អូន</span><span aria-hidden="true">✦</span>
+        <span>បើកមើលកាដូពិសេសនេះ</span><span aria-hidden="true">✦</span>
       </button>
-      <p class="tiny-note">ក្តីស្រឡាញ់តូចមួយពីបេះដូងបង ធ្វើឡើងសម្រាប់តែអូន</p>
+      <p class="tiny-note">កាដូតូចមួយពីបេះដូងបង សម្រាប់អូនតែម្នាក់គត់</p>
     </div>
     <div class="opening-orbit" aria-hidden="true"><span>♥</span></div>
   </header>
@@ -54,7 +54,7 @@
           </div>
         </div>
 
-        <div class="wish-stage reveal" aria-label="នំខួបកំណើតដែលមានទៀនបីដើម">
+        <div class="wish-stage reveal" aria-label="នំថ្ងៃកំណើតដែលមានទៀនបីដើម">
           <div class="cake-wrap" id="cake">
             <div class="candle-row" aria-hidden="true">
               <button class="candle" type="button" tabindex="-1"><i class="flame"></i><span></span></button>
@@ -67,10 +67,10 @@
           </div>
           <button class="wish-button" id="makeWish" type="button">
             <span class="wish-icon" aria-hidden="true">✦</span>
-            <span>សុំបំណងប្រាថ្នា</span>
+            <span>បួងសួងបំណងមួយ</span>
           </button>
-          <p class="wish-hint">បិទភ្នែក ហើយសុំបំណងមួយទៅ។</p>
-          <p class="wish-reveal" id="wishReveal" role="status">សូមឱ្យរឿងល្អៗទាំងអស់ ស្វែងរកផ្លូវមកកាន់អូន។</p>
+          <p class="wish-hint">បិទភ្នែក ហើយបួងសួងបំណងមួយណា។</p>
+          <p class="wish-reveal" id="wishReveal" role="status">សូមឱ្យបំណងប្រាថ្នារបស់អូន ក្លាយជាការពិត។</p>
         </div>
       </div>
       <div class="scroll-cue" aria-hidden="true"><span></span>នៅមានអ្វីពិសេសទៀតខាងក្រោម</div>
@@ -80,6 +80,13 @@
       <div class="section-inner portrait-grid">
         <div class="portrait-frame reveal" id="portraitFrame">
           <!-- Replace assets/images/darika.jpg with Darika's portrait. -->
+          <img
+            class="portrait-image"
+            id="darikaPhoto"
+            src="assets/images/darika.jpeg"
+            alt="រូបថតរបស់ដារីកា"
+            decoding="async"
+          >
           <div class="photo-fallback portrait-fallback">
             <span class="fallback-monogram">ដ</span>
             <span class="fallback-spark">✦</span>
@@ -90,8 +97,8 @@
         </div>
         <div class="portrait-copy reveal">
           <p class="eyebrow">ម្ចាស់ថ្ងៃកំណើត</p>
-          <h2 id="portrait-title">ពិភពលោកកាន់តែស្រស់ស្អាត ចាប់តាំងពីថ្ងៃដែលអូនបានមកដល់។</h2>
-          <p>ហើយថ្ងៃនេះ ពិភពលោកទាំងមូលបានអបអរសាទរអូន។</p>
+          <h2 id="portrait-title">ពិភពលោករបស់បង កាន់តែស្រស់ស្អាត ចាប់តាំងពីថ្ងៃដែលបងបានស្គាល់អូន។</h2>
+          <p>ហើយបងនឹងនៅតែស្រឡាញ់អូនបែបនេះ ជារៀងរហូត។</p>
           <span class="signature-mark" aria-hidden="true">ដារីកា</span>
         </div>
       </div>
@@ -100,35 +107,36 @@
     <section class="section letter-section" aria-labelledby="letter-title">
       <div class="section-inner letter-wrap">
         <div class="letter-heading reveal">
-          <p class="eyebrow">ពាក្យពេចន៍ចេញពីបេះដូងបង</p>
+          <p class="eyebrow">ពាក្យចេញពីបេះដូងបង</p>
           <h2 id="letter-title">សំបុត្រតូចមួយសម្រាប់អូន</h2>
         </div>
         <article class="love-letter" aria-label="សំបុត្រជូនពរថ្ងៃកំណើតទៅកាន់ដារីកា">
           <span class="letter-corner" aria-hidden="true">♥</span>
-          <p class="letter-salutation letter-line">ជូនចំពោះ ដារីកា ជាទីស្រឡាញ់,</p>
+          <p class="letter-salutation letter-line">ដារីកា ជាទីស្រឡាញ់របស់បង,</p>
           <p class="letter-line">ថ្ងៃនេះ មិនមែនគ្រាន់តែជាថ្ងៃធម្មតាមួយទៀតទេ។</p>
-          <p class="letter-line">វាជាថ្ងៃដែលមនុស្សដ៏ពិសេសម្នាក់ បានចាប់កំណើតមកក្នុងពិភពលោកនេះ។</p>
-          <p class="letter-line">បងសង្ឃឹមថា ថ្ងៃនេះនឹងរំលឹកអូនថា អូនត្រូវបានគេស្រឡាញ់ ឱ្យតម្លៃ និងស្រស់ស្អាតប៉ុណ្ណា។</p>
-          <p class="letter-line">ប្រហែលជាបងមិនតែងតែរកពាក្យដែលល្អបំផុត ដើម្បីនិយាយពីអារម្មណ៍ទាំងអស់របស់បងបានទេ ប៉ុន្តែបងសង្ឃឹមថា កាដូតូចមួយនេះអាចនិយាយជំនួសបងបានខ្លះ។</p>
+          <p class="letter-line">ព្រោះវាជាថ្ងៃដែលមនុស្សដ៏ពិសេសម្នាក់ បានចាប់កំណើតមកក្នុងពិភពលោកនេះ។</p>
+          <p class="letter-line">បងសង្ឃឹមថា ថ្ងៃនេះនឹងធ្វើឱ្យអូនដឹងថា អូនជាមនុស្សដែលគួរឱ្យស្រឡាញ់ មានតម្លៃ និងស្រស់ស្អាតប៉ុណ្ណា។</p>
+          <p class="letter-line">បងប្រហែលជាមិនសូវពូកែនិយាយពីអារម្មណ៍របស់បងទាំងអស់ទេ ប៉ុន្តែបងសង្ឃឹមថា កាដូតូចមួយនេះ អាចជួយនិយាយជំនួសបងបានខ្លះ។</p>
           <p class="letter-line">រីករាយថ្ងៃកំណើត ដារីកា។</p>
-          <p class="letter-line">បងសូមឱ្យឆ្នាំថ្មីនៃជីវិតអូន នាំមកនូវសុភមង្គល អនុស្សាវរីយ៍ដ៏ស្រស់ស្អាត ថ្ងៃដ៏សុខសាន្ត និងអ្វីៗគ្រប់យ៉ាងដែលបេះដូងអូនប្រាថ្នា។</p>
+          <p class="letter-line">បងសូមឱ្យឆ្នាំថ្មីនៃជីវិតអូន ពោរពេញទៅដោយសុភមង្គល អនុស្សាវរីយ៍ល្អៗ ថ្ងៃដ៏ស្ងប់សុខ និងអ្វីៗគ្រប់យ៉ាងដែលអូនប្រាថ្នា។</p>
           <p class="letter-line">ហើយអ្វីដែលសំខាន់បំផុត...</p>
-          <p class="letter-line">បងសង្ឃឹមថា អូននឹងចងចាំជានិច្ចថា អូនពិសេសសម្រាប់បងខ្លាំងប៉ុណ្ណា។</p>
-          <p class="letter-signoff letter-line">ជានិច្ចកាល ដោយក្តីស្រឡាញ់អស់ពីបេះដូង <span aria-hidden="true">♥</span></p>
+          <p class="letter-line">បងចង់ឱ្យអូនចងចាំជានិច្ចថា អូនជាមនុស្សដ៏សំខាន់បំផុតម្នាក់ក្នុងជីវិតបង។</p>
+          <p class="letter-signoff letter-line">ដោយក្តីស្រឡាញ់អស់ពីបេះដូង,<br>ភួន <span aria-hidden="true">♥</span></p>
         </article>
       </div>
     </section>
 
+    <!-- OUR MEMORIES SECTION — temporarily hidden.
+         Remove this opening comment and the matching closing comment below to restore it.
     <section class="section memories-section" aria-labelledby="memories-title">
       <div class="section-inner">
         <div class="section-heading reveal">
           <p class="eyebrow">ពេលវេលាតូចៗ ដែលរក្សាទុកជារៀងរហូត</p>
           <h2 id="memories-title">អនុស្សាវរីយ៍របស់យើង</h2>
-          <p>រូបថតនីមួយៗ ផ្ទុករឿងរ៉ាវមួយដែលមានតែយើងពីរនាក់ប៉ុណ្ណោះដែលយល់។</p>
+          <p>រូបថតនីមួយៗ មានរឿងរ៉ាវដែលមានតែយើងពីរនាក់ប៉ុណ្ណោះដែលដឹង។</p>
         </div>
         <div class="memory-strip" aria-label="វិចិត្រសាលរូបថតអនុស្សាវរីយ៍របស់យើង">
-          <!-- Replace memory-1.jpg through memory-6.jpg in assets/images/. -->
-          <article class="memory-card reveal" data-image="assets/images/memory-1.jpg">
+          <article class="memory-card reveal" data-image="assets/images/1.jpg">
             <div class="memory-photo"><div class="photo-fallback"><span>០១</span><small>អនុស្សាវរីយ៍យើង</small></div></div>
             <div class="memory-note"><time datetime="2026">ថ្ងៃមួយដែលមិនអាចបំភ្លេច</time><p>អនុស្សាវរីយ៍មួយដែលបងស្រឡាញ់បំផុត <span aria-hidden="true">♥</span></p></div>
           </article>
@@ -138,7 +146,7 @@
           </article>
           <article class="memory-card reveal" data-image="assets/images/memory-3.jpg">
             <div class="memory-photo"><div class="photo-fallback"><span>០៣</span><small>រឿងរបស់យើង</small></div></div>
-            <div class="memory-note"><time datetime="2026">ថ្ងៃដ៏ផ្អែមល្ហែម</time><p>ពេលវេលាមួយដែលបងចង់រស់នៅម្តងទៀត។</p></div>
+            <div class="memory-note"><time datetime="2026">ថ្ងៃដ៏ផ្អែមល្ហែម</time><p>ពេលវេលាមួយដែលបងចង់ត្រឡប់ទៅម្តងទៀត។</p></div>
           </article>
           <article class="memory-card reveal" data-image="assets/images/memory-4.jpg">
             <div class="memory-photo"><div class="photo-fallback"><span>០៤</span><small>នៅជាមួយគ្នា</small></div></div>
@@ -150,12 +158,13 @@
           </article>
           <article class="memory-card reveal" data-image="assets/images/memory-6.jpg">
             <div class="memory-photo"><div class="photo-fallback"><span>០៦</span><small>ទុកក្នុងបេះដូង</small></div></div>
-            <div class="memory-note"><time datetime="2026">នៅមានច្រើនទៀតនៅថ្ងៃមុខ</time><p>ជំពូកដ៏ល្អបំផុត កំពុងរង់ចាំយើង។</p></div>
+            <div class="memory-note"><time datetime="2026">នៅមានច្រើនទៀតនៅថ្ងៃមុខ</time><p>រឿងរ៉ាវដ៏ល្អបំផុតរបស់យើង នៅមិនទាន់មកដល់ទេ។</p></div>
           </article>
         </div>
         <p class="swipe-note" aria-hidden="true">អូសដើម្បីមើលអនុស្សាវរីយ៍របស់យើង →</p>
       </div>
     </section>
+    -->
 
     <section class="section heart-section" aria-labelledby="heart-title">
       <div class="section-inner heart-inner reveal">
@@ -166,16 +175,16 @@
           <span class="heart-label">ប៉ះបេះដូងបង</span>
         </button>
         <div class="heart-message" id="heartMessage" aria-live="polite">
-          <p>អូនធ្វើឱ្យគ្រប់ពេលវេលាធម្មតា ក្លាយជាពេលវេលាពិសេស។ <span aria-hidden="true">♥</span></p>
-          <p>ហើយបងពិតជាសំណាងណាស់ ដែលមានអូនក្នុងជីវិត។</p>
+          <p>មានអូននៅក្បែរ ពេលវេលាធម្មតាៗ ក៏ក្លាយជាពេលវេលាដ៏ពិសេស។ <span aria-hidden="true">♥</span></p>
+          <p>បងពិតជាមានសំណាងណាស់ ដែលមានអូននៅក្នុងជីវិត។</p>
         </div>
       </div>
     </section>
 
     <section class="section gift-section" aria-labelledby="gift-title">
       <div class="section-inner gift-inner reveal">
-        <p class="eyebrow">រឿងចុងក្រោយមួយទៀត</p>
-        <h2 id="gift-title">បងនៅមានកាដូភ្ញាក់ផ្អើលមួយទៀតសម្រាប់អូន...</h2>
+        <p class="eyebrow">នៅមានមួយទៀត</p>
+        <h2 id="gift-title">បងនៅមានកាដូពិសេសមួយទៀត សម្រាប់អូន...</h2>
         <div class="gift-box" id="giftBox" aria-hidden="true">
           <div class="gift-lid"><span class="gift-bow bow-left"></span><span class="gift-bow bow-right"></span></div>
           <div class="gift-body"><span class="gift-ribbon"></span><i>♥</i></div>
@@ -191,12 +200,12 @@
         <p class="eyebrow">សម្រាប់អូន ថ្ងៃនេះ និងជារៀងរហូត</p>
         <h2 id="finale-title">រីករាយថ្ងៃកំណើត<br><em>ដារីកា</em> <span aria-hidden="true">♥</span></h2>
         <div class="finale-words">
-          <p>អរគុណអូន ដែលជាអូនដ៏ពិសេសម្នាក់នេះ។</p>
-          <p>សូមឱ្យឆ្នាំនេះ ពោរពេញដោយពេលវេលាស្រស់ស្អាត ក្តីសុបិនដ៏ធំ សេចក្តីរីករាយតូចៗ និងហេតុផលរាប់មិនអស់ដែលធ្វើឱ្យអូនញញឹម។</p>
-          <p class="shine-line">បន្តបញ្ចេញពន្លឺរបស់អូនជានិច្ច។</p>
+          <p>អរគុណដែលអូនតែងតែជាខ្លួនឯង។</p>
+          <p>សូមឱ្យឆ្នាំថ្មីនៃជីវិតអូន ពោរពេញទៅដោយអនុស្សាវរីយ៍ល្អៗ ក្តីសុបិនធំៗ សេចក្តីរីករាយរាល់ថ្ងៃ និងស្នាមញញឹមឥតឈប់ឈរ។</p>
+          <p class="shine-line">សូមអូនបន្តញញឹមបែបនេះជានិច្ច។</p>
         </div>
         <div class="final-signature"><span>ដោយក្តីស្រឡាញ់,</span><strong>ភួន <i aria-hidden="true">♥</i></strong></div>
-        <button class="replay-button" id="replayMagic" type="button">មន្តស្នេហ៍បន្តិចទៀត <span aria-hidden="true">✦</span></button>
+        <button class="replay-button" id="replayMagic" type="button">អបអរម្តងទៀត <span aria-hidden="true">✦</span></button>
       </div>
     </section>
   </main>

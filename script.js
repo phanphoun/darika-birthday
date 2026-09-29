@@ -52,7 +52,18 @@ function loadImage(path, container, className, alt) {
 }
 
 function loadLocalPhotos() {
-  loadImage("assets/images/darika.jpg", $("#portraitFrame"), "portrait-image", "រូបថតរបស់ដារីកា");
+  const portraitFrame = $("#portraitFrame");
+  const portrait = $("#darikaPhoto");
+  const showPortrait = () => portraitFrame.classList.add("has-photo");
+  const showFallback = () => portraitFrame.classList.remove("has-photo");
+
+  portrait.addEventListener("load", showPortrait);
+  portrait.addEventListener("error", showFallback);
+  if (portrait.complete) {
+    if (portrait.naturalWidth > 0) showPortrait();
+    else showFallback();
+  }
+
   $$(".memory-card").forEach((card, index) => {
     loadImage(card.dataset.image, $(".memory-photo", card), "memory-image", `អនុស្សាវរីយ៍ដ៏ស្រស់ស្អាតជាមួយដារីកា រូបទី ${index + 1}`);
   });
@@ -152,7 +163,7 @@ function makeWish() {
   if (elements.cake.classList.contains("candles-out")) return;
   elements.cake.classList.add("candles-out");
   elements.makeWish.disabled = true;
-  elements.makeWish.querySelector("span:last-child").textContent = "បំណងត្រូវបានសុំរួចហើយ";
+  elements.makeWish.querySelector("span:last-child").textContent = "បំណងត្រូវបានបួងសួងរួចហើយ";
   elements.wishReveal.classList.add("show");
   confetti();
   fireworks();
